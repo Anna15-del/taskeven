@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <title>Nikto Report</title>
+ <style type="text/css">
+  .dataTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 11pt; 
+   font-weight: normal; 
+   color: #000066;
+   background: #EEEEEE;
+   border: thin solid black;
+   width: 95%;
+  }
+  .headerTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 15pt; 
+   font-weight: normal; 
+   color: white;
+   background: #000066;
+   border: thin solid black;
+   width: 300px;
+  }
+  .column-head
+  {
+   width: 15em;
+   font-weight:bold;
+   vertical-align: top;
+  }
+  .copyright
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   font-style: italic;
+   color: black;
+  }
+  body
+  {
+   background: white;
+  }
+ </style>
+</head>
+<body>
+<div>
+<a name="1"></a>
+<table class="headerTable">
+ <tr>
+   <td>192.168.1.5 / 192.168.1.5 port 80</td>
+ </tr>
+</table>
+<table class="dataTable">
+ <tr>
+   <td class="column-head">Target IP</td>
+   <td>192.168.1.5</td>
+ </tr>
+ <tr>
+   <td class="column-head">Target hostname</td>
+   <td>192.168.1.5</td>
+ </tr>
+  <tr>
+   <td class="column-head">Target Port</td>
+   <td>80</td>
+ </tr>
+  <tr>
+   <td class="column-head">HTTP Server</td>
+   <td>Apache/2.2.8 (Ubuntu) DAV/2</td>
+ </tr>
+ <tr>
+   <td class="column-head">Site Link (Name)</td>
+   <td><a href="http://192.168.1.5:80/">http://192.168.1.5:80/</a></td>
+ </tr>
+ <tr>
+   <td class="column-head">Site Link (IP)</td>
+   <td><a href="http://192.168.1.5:80/">http://192.168.1.5:80/</a></td>
+ </tr>
+ </table>
+</div>
+<p></p>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: Retrieved x-powered-by header: PHP/5.2.4-2ubuntu5.10.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/">http://192.168.1.5:80/</a><br>
+      <a href="http://192.168.1.5:80/">http://192.168.1.5:80/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: The anti-clickjacking X-Frame-Options header is not present.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/">http://192.168.1.5:80/</a><br>
+      <a href="http://192.168.1.5:80/">http://192.168.1.5:80/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options'>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/">http://192.168.1.5:80/</a><br>
+      <a href="http://192.168.1.5:80/">http://192.168.1.5:80/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/'>https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/index</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/index: Uncommon header 'tcn' found, with contents: list.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/index">http://192.168.1.5:80/index</a><br>
+      <a href="http://192.168.1.5:80/index">http://192.168.1.5:80/index</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/index</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/index: Apache mod_negotiation is enabled with MultiViews, which allows attackers to easily brute force file names. The following alternatives for 'index' were found: index.php.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/index">http://192.168.1.5:80/index</a><br>
+      <a href="http://192.168.1.5:80/index">http://192.168.1.5:80/index</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='http://www.wisec.it/sectou.php?id=4698ebdc59d15,https://exchange.xforce.ibmcloud.com/vulnerabilities/8275'>http://www.wisec.it/sectou.php?id=4698ebdc59d15,https://exchange.xforce.ibmcloud.com/vulnerabilities/8275</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>Apache/2.2.8 appears to be outdated (current is at least Apache/2.4.54). Apache 2.2.34 is the EOL for the 2.x branch.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/">http://192.168.1.5:80/</a><br>
+      <a href="http://192.168.1.5:80/">http://192.168.1.5:80/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>NQKKWMQI</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: Web Server returns a valid response with junk HTTP methods which may cause false positives.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/">http://192.168.1.5:80/</a><br>
+      <a href="http://192.168.1.5:80/">http://192.168.1.5:80/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>TRACE</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: HTTP TRACE method is active which suggests the host is vulnerable to XST.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/">http://192.168.1.5:80/</a><br>
+      <a href="http://192.168.1.5:80/">http://192.168.1.5:80/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://owasp.org/www-community/attacks/Cross_Site_Tracing'>https://owasp.org/www-community/attacks/Cross_Site_Tracing</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/phpinfo.php?VARIABLE=&lt;script&gt;alert('Vulnerable')&lt;/script&gt;</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/phpinfo.php: Output from the phpinfo() function was found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/phpinfo.php?VARIABLE=&lt;script&gt;alert('Vulnerable')&lt;/script&gt;">http://192.168.1.5:80/phpinfo.php?VARIABLE=&lt;script&gt;alert('Vulnerable')&lt;/script&gt;</a><br>
+      <a href="http://192.168.1.5:80/phpinfo.php?VARIABLE=&lt;script&gt;alert('Vulnerable')&lt;/script&gt;">http://192.168.1.5:80/phpinfo.php?VARIABLE=&lt;script&gt;alert('Vulnerable')&lt;/script&gt;</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/doc/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/doc/: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/doc/">http://192.168.1.5:80/doc/</a><br>
+      <a href="http://192.168.1.5:80/doc/">http://192.168.1.5:80/doc/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/doc/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/doc/: The /doc/ directory is browsable. This may be /usr/doc.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/doc/">http://192.168.1.5:80/doc/</a><br>
+      <a href="http://192.168.1.5:80/doc/">http://192.168.1.5:80/doc/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-1999-0678'>CVE-1999-0678</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000">http://192.168.1.5:80/?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000</a><br>
+      <a href="http://192.168.1.5:80/?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000">http://192.168.1.5:80/?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://vulners.com/osvdb/OSVDB:12184'>OSVDB-12184</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/?=PHPE9568F36-D428-11d2-A769-00AA001ACF42</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/?=PHPE9568F36-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/?=PHPE9568F36-D428-11d2-A769-00AA001ACF42">http://192.168.1.5:80/?=PHPE9568F36-D428-11d2-A769-00AA001ACF42</a><br>
+      <a href="http://192.168.1.5:80/?=PHPE9568F36-D428-11d2-A769-00AA001ACF42">http://192.168.1.5:80/?=PHPE9568F36-D428-11d2-A769-00AA001ACF42</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://vulners.com/osvdb/OSVDB:12184'>OSVDB-12184</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/?=PHPE9568F34-D428-11d2-A769-00AA001ACF42</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/?=PHPE9568F34-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/?=PHPE9568F34-D428-11d2-A769-00AA001ACF42">http://192.168.1.5:80/?=PHPE9568F34-D428-11d2-A769-00AA001ACF42</a><br>
+      <a href="http://192.168.1.5:80/?=PHPE9568F34-D428-11d2-A769-00AA001ACF42">http://192.168.1.5:80/?=PHPE9568F34-D428-11d2-A769-00AA001ACF42</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://vulners.com/osvdb/OSVDB:12184'>OSVDB-12184</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/?=PHPE9568F35-D428-11d2-A769-00AA001ACF42</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/?=PHPE9568F35-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/?=PHPE9568F35-D428-11d2-A769-00AA001ACF42">http://192.168.1.5:80/?=PHPE9568F35-D428-11d2-A769-00AA001ACF42</a><br>
+      <a href="http://192.168.1.5:80/?=PHPE9568F35-D428-11d2-A769-00AA001ACF42">http://192.168.1.5:80/?=PHPE9568F35-D428-11d2-A769-00AA001ACF42</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://vulners.com/osvdb/OSVDB:12184'>OSVDB-12184</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/phpMyAdmin/changelog.php</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/phpMyAdmin/changelog.php: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/phpMyAdmin/changelog.php">http://192.168.1.5:80/phpMyAdmin/changelog.php</a><br>
+      <a href="http://192.168.1.5:80/phpMyAdmin/changelog.php">http://192.168.1.5:80/phpMyAdmin/changelog.php</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/phpMyAdmin/ChangeLog</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/phpMyAdmin/ChangeLog: Server may leak inodes via ETags, header found with file /phpMyAdmin/ChangeLog, inode: 92462, size: 40540, mtime: Tue Dec  9 12:24:00 2008.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/phpMyAdmin/ChangeLog">http://192.168.1.5:80/phpMyAdmin/ChangeLog</a><br>
+      <a href="http://192.168.1.5:80/phpMyAdmin/ChangeLog">http://192.168.1.5:80/phpMyAdmin/ChangeLog</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-1418'>CVE-2003-1418</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/phpMyAdmin/ChangeLog</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/phpMyAdmin/ChangeLog: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/phpMyAdmin/ChangeLog">http://192.168.1.5:80/phpMyAdmin/ChangeLog</a><br>
+      <a href="http://192.168.1.5:80/phpMyAdmin/ChangeLog">http://192.168.1.5:80/phpMyAdmin/ChangeLog</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/test/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/test/: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/test/">http://192.168.1.5:80/test/</a><br>
+      <a href="http://192.168.1.5:80/test/">http://192.168.1.5:80/test/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/test/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/test/: This might be interesting.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/test/">http://192.168.1.5:80/test/</a><br>
+      <a href="http://192.168.1.5:80/test/">http://192.168.1.5:80/test/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/phpinfo.php</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/phpinfo.php: PHP is installed, and a test script which runs phpinfo() was found. This gives a lot of system information.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/phpinfo.php">http://192.168.1.5:80/phpinfo.php</a><br>
+      <a href="http://192.168.1.5:80/phpinfo.php">http://192.168.1.5:80/phpinfo.php</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/CWE-552.html'>CWE-552</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/icons/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/icons/: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/icons/">http://192.168.1.5:80/icons/</a><br>
+      <a href="http://192.168.1.5:80/icons/">http://192.168.1.5:80/icons/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/icons/README</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/icons/README: Apache default file found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/icons/README">http://192.168.1.5:80/icons/README</a><br>
+      <a href="http://192.168.1.5:80/icons/README">http://192.168.1.5:80/icons/README</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://www.vntweb.co.uk/apache-restricting-access-to-iconsreadme/'>https://www.vntweb.co.uk/apache-restricting-access-to-iconsreadme/</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/phpMyAdmin/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/phpMyAdmin/: phpMyAdmin directory found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/phpMyAdmin/">http://192.168.1.5:80/phpMyAdmin/</a><br>
+      <a href="http://192.168.1.5:80/phpMyAdmin/">http://192.168.1.5:80/phpMyAdmin/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/phpMyAdmin/Documentation.html</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/phpMyAdmin/Documentation.html: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/phpMyAdmin/Documentation.html">http://192.168.1.5:80/phpMyAdmin/Documentation.html</a><br>
+      <a href="http://192.168.1.5:80/phpMyAdmin/Documentation.html">http://192.168.1.5:80/phpMyAdmin/Documentation.html</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/phpMyAdmin/README</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/phpMyAdmin/README: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/phpMyAdmin/README">http://192.168.1.5:80/phpMyAdmin/README</a><br>
+      <a href="http://192.168.1.5:80/phpMyAdmin/README">http://192.168.1.5:80/phpMyAdmin/README</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://typo3.org/'>https://typo3.org/</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/#wp-config.php#</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/#wp-config.php#: #wp-config.php# file found. This file contains the credentials.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.1.5:80/#wp-config.php#">http://192.168.1.5:80/#wp-config.php#</a><br>
+      <a href="http://192.168.1.5:80/#wp-config.php#">http://192.168.1.5:80/#wp-config.php#</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<div>
+<p></p>
+<table class="headerTable">
+ <tr>
+  <td>Host Summary</td>
+ </tr>
+</table>
+<table  class="dataTable">
+ <tr>
+  <td class="column-head">Start Time</td>
+  <td>2024-12-26 06:32:50</td>
+ </tr>
+ <tr>
+  <td class="column-head">End Time</td>
+  <td>2024-12-26 06:34:23</td>
+ </tr>
+ <tr>
+  <td class="column-head">Elapsed Time</td>
+  <td>93 seconds</td>
+ </tr>
+ <tr>
+  <td class="column-head">Statistics</td>
+  <td>8911 requests, 1 errors, 27 findings</td>
+ </tr>
+</table>
+</div>
+<p></p>
+
+<p></p>
+<table class="headerTable">
+  <tr>
+    <td>Scan Summary</td>
+  </tr>
+</table>
+<table class="dataTable">
+  <tr>
+    <td class="column-head">Software Details</td>
+    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
+  <tr>
+    <td class="column-head">CLI Options</td>
+    <td>-h 192.168.1.5 -o report.html -Format htm</td>
+  </tr>
+  <tr>
+    <td class="column-head">Hosts Tested</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td class="column-head">Start Time</td>
+    <td>Thu Dec 26 06:32:49 2024</td>
+  </tr>
+  <tr>
+    <td class="column-head">End Time</td>
+    <td>Thu Dec 26 06:34:23 2024</td>
+  </tr>
+  <tr>
+    <td class="column-head">Elapsed Time</td>
+    <td>94 seconds</td>
+  </tr>
+</table>
+<p></p>
+<p class="copyright">&copy; 2008 Chris Sullo</p>
+
+<!-- (c) 2008 Chris Sullo -->
+
+</body>
+</html>
+
